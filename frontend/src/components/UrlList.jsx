@@ -26,7 +26,7 @@ function UrlList({ refresh }) {
 
   useEffect(() => {
     fetchUrls();
-  }, [refresh]); // Re-fetch when refresh prop changes
+  }, [refresh]); 
 
   const formatDate = (dateString) => {
     return new Date(dateString).toLocaleDateString('en-US', {

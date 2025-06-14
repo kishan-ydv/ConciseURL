@@ -29,7 +29,7 @@ function UrlShortener({ onUrlShortened }) {
       if (response.ok) {
         setShortUrl(data.shortUrl);
         setUrl('');
-        onUrlShortened(); // Trigger refresh of URL list
+        onUrlShortened(); 
       } else {
         setError(data.error || 'Failed to shorten URL');
       }
